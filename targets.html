@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>TargetX</title>
+
+<link rel="stylesheet"
+href="targets.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<div class="profileArea">
+
+<img
+id="profileImage"
+src="https://via.placeholder.com/90"
+alt="Profile">
+
+<div>
+
+<h2 id="userName">
+
+Student
+
+</h2>
+
+<p id="todayDate">
+
+Loading...
+
+</p>
+
+</div>
+
+</div>
+
+<div class="streakBox">
+
+🔥
+
+<span id="streakValue">
+
+0
+
+</span>
+
+</div>
+
+</header>
+
+<!-- ================= PROGRESS ================= -->
+
+<section class="progressCard">
+
+<div class="progressTop">
+
+<span>
+
+Today's Progress
+
+</span>
+
+<span id="progressText">
+
+0%
+
+</span>
+
+</div>
+
+<div class="progressBar">
+
+<div
+id="progressFill"
+class="progressFill">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MATHEMATICS ================= -->
+
+<section class="subjectCard math">
+
+<div class="subjectHeader">
+
+<h2>
+
+📐 Mathematics
+
+</h2>
+
+<button
+class="addBtn"
+onclick="openPopup('math')">
+
+➕
+
+</button>
+
+</div>
+
+<div
+id="mathList"
+class="targetList">
+
+</div>
+
+</section>
+
+<!-- ================= CHEMISTRY ================= -->
+
+<section class="subjectCard chemistry">
+
+<div class="subjectHeader">
+
+<h2>
+
+🧪 Chemistry
+
+</h2>
+
+<button
+class="addBtn"
+onclick="openPopup('chemistry')">
+
+➕
+
+</button>
+
+</div>
+
+<div
+id="chemistryList"
+class="targetList">
+
+</div>
+
+</section>
+
+<!-- ================= PHYSICS ================= -->
+
+<section class="subjectCard physics">
+
+<div class="subjectHeader">
+
+<h2>
+
+⚛️ Physics
+
+</h2>
+
+<button
+class="addBtn"
+onclick="openPopup('physics')">
+
+➕
+
+</button>
+
+</div>
+
+<div
+id="physicsList"
+class="targetList">
+
+</div>
+
+</section>
+
+
+<!-- ================= SAVE BUTTON ================= -->
+
+<button id="saveBtn">
+
+💾 Save Today's Targets
+
+</button>
+
+<!-- ================= ADD / EDIT POPUP ================= -->
+
+<div id="popup" class="popup">
+
+<div class="popupCard">
+
+<h2 id="popupTitle">
+
+➕ Add Target
+
+</h2>
+
+<input
+type="text"
+id="targetInput"
+placeholder="Enter Target">
+
+<select id="priority">
+
+<option value="easy">
+
+🟢 Easy
+
+</option>
+
+<option value="medium">
+
+🟡 Medium
+
+</option>
+
+<option value="hard">
+
+🔴 Hard
+
+</option>
+
+</select>
+
+<div class="popupButtons">
+
+<button
+onclick="closePopup()">
+
+Cancel
+
+</button>
+
+<button
+id="popupSaveBtn"
+  onclick="saveTarget()">
+
+Save
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
+
+<nav class="bottomNav">
+
+<a
+href="index.html">
+
+🏠
+
+<br>
+
+Home
+
+</a>
+
+<a
+href="targets.html"
+class="active">
+
+🎯
+
+<br>
+
+Targets
+
+</a>
+
+<a
+href="profile.html">
+
+👤
+
+<br>
+
+Profile
+
+</a>
+
+<a
+href="settings.html">
+
+⚙️
+
+<br>
+
+Settings
+
+</a>
+
+</nav>
+
+</div>
+
+<script src="targets.js"></script>
+
+</body>
+
+</html>

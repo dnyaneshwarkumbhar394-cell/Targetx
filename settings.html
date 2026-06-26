@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Settings</title>
+
+<link rel="stylesheet"
+href="settings.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Header -->
+
+<header class="header">
+
+<h1>⚙️ Settings</h1>
+
+<p>Customize Your TargetX</p>
+
+</header>
+
+<!-- Profile Card -->
+
+<section class="profileCard">
+
+<img
+id="profileImage"
+src="https://via.placeholder.com/120"
+alt="Profile">
+
+<h2 id="userName">
+
+Student
+
+</h2>
+
+<div class="streakBadge">
+
+🔥 <span id="streakValue">0</span> Day Streak
+
+</div>
+
+</section>
+
+<!-- Account -->
+
+<section class="settingCard">
+
+<h3>👤 Account</h3>
+
+<div class="settingItem"
+onclick="changeName()">
+
+<span>✏️ Change Name</span>
+
+<span>›</span>
+
+</div>
+
+<div class="settingItem"
+onclick="changePhoto()">
+
+<span>📷 Change Profile Photo</span>
+
+<span>›</span>
+
+</div>
+
+<div class="settingItem"
+onclick="changePassword()">
+
+<span>🔐 Change Password</span>
+
+<span>›</span>
+
+</div>
+
+</section>
+
+<!-- App Settings -->
+
+<section class="settingCard">
+
+<h3>🎨 App</h3>
+
+<div class="settingItem">
+
+<span>🌙 Dark Mode</span>
+
+<label class="switch">
+
+<input
+type="checkbox"
+id="darkMode">
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+<div class="settingItem">
+
+<span>🔔 Notifications</span>
+
+<label class="switch">
+
+<input
+type="checkbox"
+id="notifications">
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+</section>
+
+<!-- ================= DATA ================= -->
+
+<section class="settingCard">
+
+<h3>💾 Data</h3>
+
+<div class="settingItem"
+onclick="exportData()">
+
+<span>📤 Export Data</span>
+
+<span>›</span>
+
+</div>
+
+<div class="settingItem"
+onclick="importData()">
+
+<span>📥 Import Data</span>
+
+<span>›</span>
+
+</div>
+
+<div class="settingItem danger"
+onclick="resetToday()">
+
+<span>🔄 Reset Today's Targets</span>
+
+<span>›</span>
+
+</div>
+
+<div class="settingItem danger"
+onclick="resetAllData()">
+
+<span>🗑 Reset All Data</span>
+
+<span>›</span>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="settingCard">
+
+<h3>ℹ️ About</h3>
+
+<div class="settingItem">
+
+<span>📱 Version</span>
+
+<span>1.0.0</span>
+
+</div>
+
+<div class="settingItem">
+
+<span>❤️ Made By</span>
+
+<span>Dnyaneshwar</span>
+
+</div>
+
+</section>
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
+
+<nav class="bottomNav">
+
+<a href="index.html">
+🏠<br>Home
+</a>
+
+<a href="targets.html">
+🎯<br>Targets
+</a>
+
+<a href="profile.html">
+👤<br>Profile
+</a>
+
+<a href="settings.html" class="active">
+⚙️<br>Settings
+</a>
+
+</nav>
+
+</div>
+
+<script src="settings.js"></script>
+
+</body>
+</html>

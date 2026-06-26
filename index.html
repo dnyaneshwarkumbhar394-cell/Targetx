@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daily Target</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    
+   <div id="lockScreen" class="lockScreen">
+
+  <div class="lockCard">
+
+    <h1>🔒 TargetX</h1>
+
+    <p>Enter Password</p>
+
+    <input
+      type="password"
+      id="lockPassword"
+      placeholder="Password">
+
+    <button onclick="unlockApp()">
+      Unlock
+    </button>
+
+    <p id="lockMessage"></p>
+
+  </div>
+
+</div> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+<div class="container">
+
+    <!-- Profile -->
+
+    <div class="profile">
+
+        <img id="profileImage"
+        src="https://via.placeholder.com/120"
+        alt="Profile">
+
+        <h2 id="userName">
+            Your Name
+        </h2>
+
+        <p id="todayDate">
+            Loading Date...
+        </p>
+
+    </div>
+
+    <!-- Streak -->
+
+    <div class="card">
+
+        <h3>🔥 Current Streak</h3>
+
+        <h1 id="streak">
+            0 Days
+        </h1>
+
+    </div>
+
+    <!-- Target Summary -->
+
+    <div class="card">
+
+        <h3>📚 Today's Subjects</h3>
+
+        <div class="subject">
+
+            <span>📐 Mathematics</span>
+
+            <span>0 / 3</span>
+
+        </div>
+
+        <div class="subject">
+
+            <span>🧪 Chemistry</span>
+
+            <span>0 / 3</span>
+
+        </div>
+
+        <div class="subject">
+
+            <span>⚛️ Physics</span>
+
+            <span>0 / 3</span>
+
+        </div>
+
+    </div>
+
+    <!-- Button -->
+
+    <button onclick="location.href='targets.html'">
+
+        🎯 Open Today's Targets
+
+    </button>
+
+    <button onclick="location.href='settings.html'">
+
+        ⚙️ Settings
+
+    </button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
